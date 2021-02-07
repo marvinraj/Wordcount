@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count | COUNT</title>
+    <link rel='stylesheet' type='text/css' href="{% static 'wordcount/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav id='navbar'>
+            <div class='container'>
+                <h1 class='logo'>W.C</h1>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href="{% url 'action' %}">Count</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+ 
+    <div class='clr'></div>
+
+    <section id='showcase-2'>
+        <div class="container-1">
+            <div class="formwrap">
+                <h1>WORD COUNT</h1>
+                <p>Type in your words!</p>
+                <form action="{% url 'count' %}"> 
+                    <textarea cols="40" rows="5" name="fulltext"></textarea>
+                    <br></br>
+                    <input type="submit" value="Count!"></input>
+                </form> 
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="main-footer">
+        <p>Word Count &copy; 2021, All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>

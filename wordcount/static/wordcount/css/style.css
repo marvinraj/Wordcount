@@ -1,0 +1,199 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/* UTILITIES */
+.container{
+    margin:auto;
+    max-width:1100px;
+    overflow:auto;
+
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    font-size:20px;
+    background-color:black;
+    border:none;
+    padding:13px 20px;
+}
+
+.btn:hover{
+    background-color: khaki;
+    color:black;
+}
+
+.clr{
+    clear:both;
+}
+
+
+
+
+/* MAIN */
+a{
+    text-decoration:none;
+    color:khaki;
+}
+
+#navbar{
+    background-color:black;
+    overflow:auto;
+}
+
+#navbar h1{
+    float:left;
+    padding-top:15px;
+}
+
+#navbar ul{
+    float:right;
+    list-style:none;
+    padding-left:10px;
+}
+
+#navbar ul li{
+    float:left;
+}
+
+#navbar ul li a{
+    padding:15px 25px;
+    display:block;
+    text-align:center;
+}
+
+#navbar ul li a:hover{
+    background:lightgray;
+    color:maroon;
+}
+
+.logo{
+    color:indianred;
+    font-family:unset;
+}
+
+/* SHOWCASE */
+#showcase{
+    background: url("/static/wordcount/images/showcase.jpg") no-repeat center center/cover; 
+    height:700px;
+}
+
+#showcase .showcase-content{
+    text-align:center;
+    color:goldenrod;
+    padding-top:170px;
+}
+
+.para-1{
+    font-size:40px;
+    padding-top:10px;
+}
+
+.head-1{
+    padding-bottom:5px;
+}
+
+.head-2{
+    color:indianred;
+}
+
+/* HOME INFO */
+#bg-1{
+    padding-top:115px;
+    background: url("/static/wordcount/images/bg-1.jpg") no-repeat center center/cover;
+    height:500px;
+}
+
+#bg-1 .container{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.7;
+    background:darkgray;
+    color:black;
+    border-radius:20px;
+    text-align:center;
+}
+
+#bg-1 .container img{
+    float:left;
+    width:400px;
+    margin-right: 20px;
+}
+
+
+/* COUNT */
+
+.container-1{
+    padding-top:30px;
+    margin:auto;
+    max-width:500px;
+    height:600px;
+}
+
+
+#showcase-2{
+    background: url("/static/wordcount/images/showcase.jpg") no-repeat center center/cover;
+    height:700px;
+}
+
+#showcase-2 .formwrap{
+    background:darkslategray;
+    border:teal 2px solid;
+    border-radius:10px;
+}
+
+
+#showcase-2 .formwrap p {
+    color:bisque;
+    text-align:center;
+    padding-bottom:10px;
+}
+
+#showcase-2 .formwrap h1{
+    color:bisque;
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:15px;
+}
+
+#showcase-2 .formwrap textarea{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    max-height: 400px;
+    height: 400px;
+}
+
+#showcase-2 .formwrap input{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border:moccasin 1px solid;
+    padding:10px 20px;
+    margin-bottom:21px;
+    margin-top:-17px;
+    width:90%;
+    background:black;
+    color:blanchedalmond;
+}
+
+#showcase-2 .formwrap input:hover{
+    background:blanchedalmond;
+    color:black;
+    border:black 1px solid;
+}
+
+
+/* FOOTER */
+#main-footer{
+    text-align:center;
+    background:black;
+    color:white;
+    padding-top:15px;
+    padding-bottom:15px;
+}

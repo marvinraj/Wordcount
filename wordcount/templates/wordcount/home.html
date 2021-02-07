@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count | Welcome</title>
+    <link rel='stylesheet' type='text/css' href="{% static 'wordcount/css/style.css' %}">
+</head>
+
+
+<body>
+    <header>
+        <nav id='navbar'>
+            <div class='container'>
+                <h1 class='logo'>W.C</h1>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href="{% url 'action' %}">Count</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id='showcase'>
+            <div class='container'>
+                <div class='showcase-content'>
+                    <h3 class='head-1'>Welcome to <span class='head-2'>Word Count</span></h1>
+                    <p class='para-1'>Word Count is one of kind,</p>
+                    <p class='para-1'>the best, and the greatest website</p>
+                    <p class='para-1'>to ever
+                    exist in the world</p>
+                    <a class='btn' href="{% url 'action' %}">Count Words</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class='clr'></div>
+
+    <section id='bg-1'>
+        <div class='container'>
+            <div class="content-1">
+                <img src="{% static 'wordcount/images/img-1.jpg' %}" alt='doggo'>
+                <div class='words'>
+                    <h2 class='black'>Why is Word Count the best?</h2>
+                    <p class='black'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nobis 
+                    eligendi dolores voluptas aperiam quasi sequi, quia modi cumque excepturi dolorum 
+                    saepe minus ad fugit accusantium molestiae explicabo autem temporibus consectetur 
+                    repudiandae porro? Sapiente, iusto nihil. Earum a dolorum aspernatur!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class='clr'></div>
+
+    <footer id="main-footer">
+        <p>Word Count &copy; 2021, All Rights Reserved</p>
+    </footer>
+
+</body>
+
+
+</html>
